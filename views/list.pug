@@ -1,0 +1,28 @@
+extends ./layout/websiteLayout.pug
+
+block head
+  meta(content="text/html; charset=utf-8")
+  link(rel="stylesheet" href="css/calendar.css")
+
+
+block title
+  title View List
+block content
+  include includes/pageTop
+  
+  header.navbar-margin-small
+    .container.mb-5
+      .row
+        .col-12
+          h1.text-center.mb-4 Competitions
+      .row#map.mb-4
+      .row
+        .col-10.mx-auto
+          ul(class='list-group card' id='listByCompetitions')
+
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAelFWKY1dKrutBzkJ_yqbijTLf1eILXmE&callback=initMap")
+
+
+  script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+  script(type="text/javascript" src='list.js')
+  

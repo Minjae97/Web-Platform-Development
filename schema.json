@@ -1,0 +1,44 @@
+//dance
+{
+	"competitions": [
+		{
+			"competition_id": "123142325464523",
+			"location(full address)": "22 Main st Boston MA",
+			"latitude": 48.8698679,
+			"longitude": 2.3072976,
+			"competition": "Dance Competition",
+			"routines": [
+				{
+					"id": "123456789_1234",
+					"name": "John Smith",
+					"dance": "Foxtrot",
+					"upload_Date": 11/03/2019,
+					"start_Date": ,
+					"end_Date":,
+					"isActive": "true",
+					"results": [
+						{
+							"score": "7.5",
+							"comments": "Great stuff overall, but energy wore off near the end.",
+							"feedback_Date": 11/03/2019,
+							"location": "Country(coordinate)",
+						
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+//users
+{
+	"identities": [
+		{
+			"_id": "yYe7xa_JE",
+			"eamil": "jerrykang13@gmail.com",
+			"password": "$2b$10$YmDF.2HhDiXib4qDyl8QyOp7TUjsIsMuhgS/Fblz8BJLS/tU8cCk6",
+			"username": "jerry",
+		}
+	]
+}

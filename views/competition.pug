@@ -1,0 +1,28 @@
+extends ./layout/websiteLayoutDeep.pug
+
+block title
+  title Competition
+block head
+  link(rel="stylesheet" href="../../css/comp.css")
+  style.
+        #map{
+            height:400px;
+            width:30%;
+        }
+block content
+  include includes/pageTopDeep
+  
+  //- Header
+  header.navbar-margin
+    .container
+      .row
+        .col-10.mx-auto
+          h1.text-center(id='competition') #{compData.competition}
+          h4.text-center(id='location') #{compData.location}
+          h2.mb-3.mt-3.mx-1 Routines
+          ul(class='list-group card' id='listByDances')
+            - for (var i = 0; i < danceData.dance.length; i++)
+              li.list-group-item
+                a(href=`../../judge?id=${danceData.id[i]}`)
+                  h4 #{danceData.dance[i]}
+                  p.no-margin By #{danceData.name[i]}
